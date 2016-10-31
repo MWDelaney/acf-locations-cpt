@@ -24,7 +24,7 @@ class Init {
 
 		// Add admin scripts
 		add_action('admin_enqueue_scripts', array( $this, 'admin_scripts' ) );
-
+		add_action( 'init', 'change_post_type_labels' );
 	}
 
 	/**

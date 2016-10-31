@@ -6,7 +6,7 @@ $names = [
     'name' => 'location',
     'singular' => 'Location',
     'plural' => 'Locations',
-    'slug' => 'books'
+    'slug' => 'locations'
 ];
 
 // Post type options
@@ -26,3 +26,18 @@ $locations->icon('dashicons-location-alt');
 
 // Set post type translation domain
 $locations->translation('cpt-locations');
+
+/**
+ * Change the post type labels
+ */
+function change_post_type_labels() {
+  global $wp_post_types;
+
+  // Get the post labels
+  $postLabels = $wp_post_types['location']->labels;
+  $postLabels->featured_image = 'Location Photo';
+	$postLabels->set_featured_image = 'Set location photo';
+	$postLabels->remove_featured_image = 'Remove location photo';
+	$postLabels->use_featured_image = 'Use as location photo';
+}
+add_action( 'init', 'change_post_type_labels' );
