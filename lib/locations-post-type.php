@@ -40,4 +40,3 @@ function change_post_type_labels() {
 	$postLabels->remove_featured_image = 'Remove location photo';
 	$postLabels->use_featured_image = 'Use as location photo';
 }
-add_action( 'init', 'change_post_type_labels' );
