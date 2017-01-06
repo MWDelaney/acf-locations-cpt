@@ -3,7 +3,7 @@ $p = get_post($context->post);
  ?>
 
 
-	<div class="card location">
+	<div class="location">
 		<figure class="location-photo">
 			<?php echo get_the_post_thumbnail( $p->ID, 'large', array( 'class' => 'card-img-top img-fluid' ) ); ?>
 		</figure>
