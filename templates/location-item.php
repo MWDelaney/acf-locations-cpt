@@ -44,7 +44,7 @@ $p = get_post($context->post);
 				<p class="card-text"><?php the_field('location_description', $p->ID); ?></p>
 			</div>
 			<div class="directions">
-				<a href="<?php the_field('directions_link', $p->ID); ?>" class="btn btn-secondary"><?php _e('Get Directions', 'cpt-locations'); ?></a>
+				<a href="<?php the_field('directions_link', $p->ID); ?>" class="btn btn-location"><?php _e('Get Directions', 'cpt-locations'); ?></a>
 			</div>
 			</div>
 		</div>
