@@ -4,6 +4,7 @@ $p = get_post($context->post);
 
 
 	<div class="location">
+		<div class="card">
 		<figure class="location-photo">
 			<?php echo get_the_post_thumbnail( $p->ID, 'large', array( 'class' => 'card-img-top img-fluid' ) ); ?>
 		</figure>
@@ -44,6 +45,7 @@ $p = get_post($context->post);
 			</div>
 			<div class="directions">
 				<a href="<?php the_field('directions_link', $p->ID); ?>" class="btn btn-secondary"><?php _e('Get Directions', 'cpt-locations'); ?></a>
+			</div>
 			</div>
 		</div>
 	</div>
