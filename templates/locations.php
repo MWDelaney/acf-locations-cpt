@@ -1,5 +1,5 @@
 
-<div class="card-deck">
+<div class="locations">
 	<?php
 
 	foreach ( $context->posts as $p ) {
